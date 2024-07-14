@@ -6,7 +6,7 @@ import IconScissors from "../assets/icon-scissors.svg";
 import Logo from "../assets/logo.svg";
 import Rules from "../assets/image-rules.svg";
 
-export const SVG = {
+export const SVG: { [key: string]: string } = {
   BG_TRIANGLE: BgTriangle,
   CLOSE: IconClose,
   PAPER: IconPaper,
