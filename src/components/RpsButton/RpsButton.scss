@@ -2,7 +2,7 @@
 
 .rps-container {
   border-style: solid;
-  border-width: 20px;
+  border-width: 15px;
   border-radius: 100%;
 
   &:enabled {
@@ -26,9 +26,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120px;
-  width: 120px;
+  height: 90px;
+  width: 90px;
   background-color: white;
-  border-top: 7px solid $gray;
+  border-top: 5px solid $gray;
   border-radius: 100%;
 }
