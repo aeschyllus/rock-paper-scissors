@@ -3,7 +3,7 @@
 .App {
 .app {
   text-align: center;
-  background-color: $bg;
+  background: radial-gradient(circle at top, #1f3658, $bg);
   height: 100vh;
   display: flex;
   flex-direction: column;
