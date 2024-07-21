@@ -1,6 +1,5 @@
 @import "src/assets/styles/variables.scss";
 
-.App {
 .app {
   text-align: center;
   background: radial-gradient(circle at top, #1f3658, $bg);
@@ -9,6 +8,46 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 24px;
+
+  &__header {
+    width: 85%;
+    border: 3px solid $gray;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px;
+
+    &__logo {
+      height: 60px;
+    }
+
+    &__score {
+      background-color: white;
+      height: 100%;
+      border-radius: 6px;
+      padding: 5px 20px;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      &__title {
+        color: #4e578e;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 10px;
+        font-weight: 900;
+      }
+
+      &__count {
+        color: #58566b;
+        font-size: 32px;
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 .rps {

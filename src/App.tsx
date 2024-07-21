@@ -1,9 +1,17 @@
 import RpsButton from "./components/RpsButton/RpsButton";
+import { SVG } from "./constants/images";
 import "./App.scss";
 
 function App() {
   return (
     <main className="app">
+      <header className="app__header">
+        <img className="app__header__logo" src={SVG.LOGO} alt="Logo" />
+        <div className="app__header__score">
+          <p className="app__header__score__title">score</p>
+          <p className="app__header__score__count">12</p>
+        </div>
+      </header>
       <div className="rps">
         <img
           className="rps__triangle"
