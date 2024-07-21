@@ -1,10 +1,39 @@
 @import "src/assets/styles/variables.scss";
 
 .App {
+.app {
   text-align: center;
   background-color: $bg;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.rps {
+  position: relative;
+
+  &__triangle {
+    height: 200px;
+  }
+
+  &__button {
+    position: absolute;
+
+    &--rock {
+      bottom: -4%;
+      right: 25%;
+    }
+
+    &--paper {
+      top: -20%;
+      left: -12%;
+    }
+
+    &--scissors {
+      top: -20%;
+      right: -12%;
+    }
+  }
 }
