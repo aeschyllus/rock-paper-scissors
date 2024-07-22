@@ -1,7 +1,6 @@
 @import "src/assets/styles/variables.scss";
 
 .app {
-  text-align: center;
   background: radial-gradient(circle at top, #1f3658, $bg);
   height: 100vh;
   display: flex;
@@ -11,7 +10,7 @@
   padding: 24px;
 
   &__header {
-    width: 85%;
+    width: 100%;
     border: 3px solid $gray;
     border-radius: 6px;
     display: flex;
