@@ -34,6 +34,14 @@ function App() {
           onClick={() => console.log("hi")}
         />
       </div>
+      <footer className="app__footer">
+        <button
+          className="app__footer__rules"
+          onClick={() => console.log("rules")}
+        >
+          rules
+        </button>
+      </footer>
     </main>
   );
 }
