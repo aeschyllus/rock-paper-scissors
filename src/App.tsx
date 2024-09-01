@@ -1,8 +1,15 @@
+import { useState } from "react";
 import RpsButton from "./components/RpsButton/RpsButton";
 import { SVG } from "./constants/images";
 import "./App.scss";
+import RulesModal from "./components/RulesModal/RulesModal";
 
 function App() {
+  const [showRules, setShowRules] = useState(false);
+
+  const handleOpenRules = () => setShowRules(true);
+  const handleCloseRules = () => setShowRules(false);
+
   return (
     <main className="app">
       <header className="app__header">
@@ -35,12 +42,10 @@ function App() {
         />
       </div>
       <footer className="app__footer">
-        <button
-          className="app__footer__rules"
-          onClick={() => console.log("rules")}
-        >
+        <button className="app__footer__rules" onClick={handleOpenRules}>
           rules
         </button>
+        <RulesModal show={showRules} onClose={handleCloseRules} />
       </footer>
     </main>
   );
