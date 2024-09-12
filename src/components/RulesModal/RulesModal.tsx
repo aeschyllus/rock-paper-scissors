@@ -9,7 +9,10 @@ type RulesModalProps = {
 
 export default function RulesModal({ show, onClose }: RulesModalProps) {
   return (
-    <div className={classNames("modal-container", { hidden: !show })}>
+    <div
+      className={classNames("modal-container", { hidden: !show })}
+      data-testid="rules-modal"
+    >
       <div className="modal">
         <div className="modal__header">
           <p className="modal__header__title">rules</p>

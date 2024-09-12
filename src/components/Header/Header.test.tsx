@@ -1,0 +1,7 @@
+import { render, screen } from "@testing-library/react";
+import Header from "./Header";
+
+it("should render", () => {
+  render(<Header />);
+  expect(screen.getByTestId("header")).toBeInTheDocument();
+});

@@ -1,0 +1,14 @@
+@import "src/assets/styles/variables.scss";
+
+.footer {
+  &__rules {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 9px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+}
