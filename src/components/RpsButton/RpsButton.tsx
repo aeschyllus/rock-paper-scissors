@@ -7,6 +7,7 @@ type RpsButtonProps = {
   onClick: () => void;
   disabled?: boolean;
   className?: string;
+  ariaLabel?: string;
 };
 
 export default function RpsButton({
@@ -14,6 +15,7 @@ export default function RpsButton({
   onClick,
   disabled,
   className,
+  ariaLabel = "rps-button",
 }: RpsButtonProps) {
   const image = SVG[type].toString();
 
@@ -30,7 +32,7 @@ export default function RpsButton({
       )}
       onClick={onClick}
       disabled={disabled}
-      aria-label="rps-button"
+      aria-label={ariaLabel}
     >
       <div className="rps-button">
         <img src={image} alt={type} />
