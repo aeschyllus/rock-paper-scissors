@@ -3,12 +3,12 @@ import { useRps } from "./hooks/useRps";
 import "./App.scss";
 
 function App() {
-  const { setUserPick } = useRps();
+  const { userPick, setUserPick } = useRps();
 
   return (
     <main className="app">
       <Header />
-      <Rps setUserPick={setUserPick} />
+      <Rps setUserPick={setUserPick} hasUserPicked={!!userPick} />
       <Footer />
     </main>
   );

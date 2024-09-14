@@ -9,30 +9,3 @@
   align-items: center;
   padding: 32px 24px;
 }
-
-.rps {
-  position: relative;
-
-  &__triangle {
-    height: 200px;
-  }
-
-  &__button {
-    position: absolute;
-
-    &--rock {
-      bottom: -4%;
-      right: 25%;
-    }
-
-    &--paper {
-      top: -20%;
-      left: -12%;
-    }
-
-    &--scissors {
-      top: -20%;
-      right: -12%;
-    }
-  }
-}
