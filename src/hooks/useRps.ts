@@ -26,7 +26,7 @@ export function useRps() {
    *    2 = tie
    */
   const getResult = (user: string, house: string) => {
-    if (user === house) {
+    if (user === house && RPS.includes(user) && RPS.includes(house)) {
       return 2; // tie
     }
 

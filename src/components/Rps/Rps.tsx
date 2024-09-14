@@ -1,13 +1,19 @@
+import classNames from "classnames";
 import { RpsButton } from "..";
 import { SVG } from "../../constants/images";
+import "./Rps.scss";
 
 type RpsProps = {
   setUserPick: (pick: string) => void;
+  hasUserPicked: boolean;
 };
 
-export default function Rps({ setUserPick }: RpsProps) {
+export default function Rps({ hasUserPicked, setUserPick }: RpsProps) {
   return (
-    <section className="rps" data-testid="rps">
+    <section
+      className={classNames("rps", { hidden: hasUserPicked })}
+      data-testid="rps"
+    >
       <img
         className="rps__triangle"
         src={SVG.BG_TRIANGLE}

@@ -30,6 +30,18 @@ describe("getResult", () => {
     expect(output3).toBe(2);
   });
 
+  test("something went wrong", () => {
+    const { result } = renderHook(useRps);
+    const { getResult } = result.current;
+    let output;
+
+    act(() => {
+      output = getResult("test", "test");
+    });
+
+    expect(output).toBe(-1);
+  });
+
   describe("rock", () => {
     it("should beat scissors", async () => {
       const { result } = renderHook(useRps);
