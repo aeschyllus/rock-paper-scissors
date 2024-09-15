@@ -34,7 +34,7 @@ export function useRps() {
       if (house === "PAPER") {
         setScore((prev) => prev - 1);
         return 0;
-      } else if (house === "SCISSORS") {
+      } else {
         setScore((prev) => prev + 1);
         return 1;
       }
@@ -42,7 +42,7 @@ export function useRps() {
       if (house === "SCISSORS") {
         setScore((prev) => prev - 1);
         return 0;
-      } else if (house === "ROCK") {
+      } else {
         setScore((prev) => prev + 1);
         return 1;
       }
@@ -50,7 +50,7 @@ export function useRps() {
       if (house === "ROCK") {
         setScore((prev) => prev - 1);
         return 0;
-      } else if (house === "PAPER") {
+      } else {
         setScore((prev) => prev + 1);
         return 1;
       }

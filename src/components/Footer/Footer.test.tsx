@@ -16,3 +16,18 @@ it("should open rules modal", () => {
   fireEvent.click(btn);
   expect(rulesModal.classList.contains("hidden")).toBe(false);
 });
+
+it("should close rules modal", () => {
+  render(<Footer />);
+  const openBtn = screen.getByRole("button", { name: "open-modal-btn" });
+  const closeBtn = screen.getByRole("button", { name: "close-modal-btn" });
+  const rulesModal = screen.getByTestId("rules-modal");
+  expect(openBtn).toBeInTheDocument();
+  expect(closeBtn).toBeInTheDocument();
+
+  fireEvent.click(openBtn);
+  expect(rulesModal.classList.contains("hidden")).toBe(false);
+
+  fireEvent.click(closeBtn);
+  expect(rulesModal.classList.contains("hidden")).toBe(true);
+});
