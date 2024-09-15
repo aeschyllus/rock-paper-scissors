@@ -4,7 +4,7 @@ import "./RpsButton.scss";
 
 type RpsButtonProps = {
   type: "ROCK" | "PAPER" | "SCISSORS";
-  onClick: () => void;
+  onClick?: () => void;
   disabled?: boolean;
   className?: string;
   ariaLabel?: string;
