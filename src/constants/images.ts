@@ -6,22 +6,12 @@ import IconScissors from "../assets/icon-scissors.svg";
 import Logo from "../assets/logo.svg";
 import Rules from "../assets/image-rules.svg";
 
-enum SvgKeys {
-  BG_TRIANGLE = "BG_TRIANGLE",
-  CLOSE = "CLOSE",
-  PAPER = "PAPER",
-  ROCK = "ROCK",
-  SCISSORS = "SCISSORS",
-  LOGO = "LOGO",
-  RULES = "RULES",
-}
-
-export const SVG: { [key in SvgKeys]: string } = {
-  [SvgKeys.BG_TRIANGLE]: BgTriangle,
-  [SvgKeys.CLOSE]: IconClose,
-  [SvgKeys.PAPER]: IconPaper,
-  [SvgKeys.ROCK]: IconRock,
-  [SvgKeys.SCISSORS]: IconScissors,
-  [SvgKeys.LOGO]: Logo,
-  [SvgKeys.RULES]: Rules,
+export const SVG = {
+  BG_TRIANGLE: BgTriangle,
+  CLOSE: IconClose,
+  PAPER: IconPaper,
+  ROCK: IconRock,
+  SCISSORS: IconScissors,
+  LOGO: Logo,
+  RULES: Rules,
 };

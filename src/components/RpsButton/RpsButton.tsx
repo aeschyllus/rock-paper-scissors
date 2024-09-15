@@ -2,8 +2,10 @@ import classnames from "classnames";
 import { SVG } from "../../constants/images";
 import "./RpsButton.scss";
 
+export type RpsType = "ROCK" | "PAPER" | "SCISSORS";
+
 type RpsButtonProps = {
-  type: "ROCK" | "PAPER" | "SCISSORS";
+  type: RpsType;
   onClick?: () => void;
   disabled?: boolean;
   className?: string;
@@ -17,7 +19,7 @@ export default function RpsButton({
   className,
   ariaLabel = "rps-button",
 }: RpsButtonProps) {
-  const image = SVG[type].toString();
+  const image = SVG[type];
 
   return (
     <button
